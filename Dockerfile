@@ -2,7 +2,8 @@ FROM alpine:3
 
 # Set environment variables (can override at runtime)
 ENV VINYLPOD_SRC="hw:CODEC,DEV=0" \
-    VINYLPOD_DST="/music/AUX"
+    VINYLPOD_DST="/music/AUX" \
+    VINYLPOD_SILENCE_TAIL="5.0"
 
 # Avoid interactive prompts
 ARG DEBIAN_FRONTEND=noninteractive
